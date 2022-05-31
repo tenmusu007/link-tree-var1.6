@@ -7,15 +7,15 @@ import { data } from './data';
 import Header from './component/Header';
 import SearchBar from './component/Searchbar';
 import Card from './component/Card';
+import Category from './component/Category';
 import { CountProvider } from './Context/UseContxt';
-import { useCountContext } from './Context/UseContxt';
 
 export const UserCount = React.createContext()
 // const { defaultdata, setData } = useCountContext();
 
 function App() {
   // const { defaultdata, setData } = useCountContext();
-  const textRef = useRef(null)
+  // const textRef = useRef(null)
   // const [inputText, setSearch] = useState("");
   // let inputHandler = (e) => {
   //   //convert input text to lower case
@@ -44,13 +44,9 @@ function App() {
     <div className="App">
       <CountProvider>
             <Header />
-            {/* <input type="text" ref={textRef}/>
-            <button onClick={()=>setData(data)}> test </button> */}
             <SearchBar data = {data}/>
-            <Card 
-                  // data = {data}
-            />
-            {/* {defaultdata} */}
+            <Category data = {data}/>
+            <Card/>
       </CountProvider>
     </div>
   );

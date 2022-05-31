@@ -7,7 +7,7 @@ const Card = (props) => {
     // const count = useContext(UserCount)
     // const [power, setPower] = useState(false);
 
-    // const { defaultdata, setData } = useCountContext()
+    const { defaultdata, setData } = useCountContext()
     // const cards = props.data.map((item, index) => {
     //     return (
     //         <div key={index} className='link-indiv'>
@@ -55,11 +55,23 @@ const Card = (props) => {
     //     )
     // }
     // const testsearch = setData
+    const copy =defaultdata.map((item, index) => {
+        return (
+            <div key={index} className='link-indiv'>
+                <div className='url-box'>
+                    <p className='url-name'>{item.name}</p>
+                    <p className='url'><a href={item.url}>{item.url}</a></p>
+                    <p className='repo-name'>{item.reponame}</p>
+                    <p className='url-repo'><a href={item.urlrepo}>{item.urlrepo}</a></p>
+                </div>
+            </div>
+        )
+    })
     return (
         <div className='link-container'>
             {/* {defaultdata}
             {searchedCards} */}
-            {/* {copy} */}
+            {copy}
             {/* {searchedCards} */}
             {/* <h1>atsuya</h1> */}
         </div>
