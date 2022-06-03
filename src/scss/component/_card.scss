@@ -1,0 +1,54 @@
+@use './var.scss' as v;
+
+.link-container {
+    background-color: #faf9d0;
+    background-color: v.$bg-color;
+    padding: 2rem 0;
+
+    .link-indiv {
+        color: black;
+        // background-color: #87E1C7;
+        background-color: white;
+        // background-color: #e6e6e6;
+        width: 70%;
+        margin: 0rem auto;
+        margin-bottom: 2rem;
+
+        .url-box {
+            padding: 1rem 2rem;
+            width: 90%;
+            margin: 0 auto;
+
+            .url-name {
+                font-size: 25px;
+                font-weight: bold;
+                margin: 0 0 1rem 0;
+                text-transform: capitalize;
+            }
+
+            .url {
+                font-size: 1.5rem;
+                overflow-wrap: break-word;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .repo-name {
+                font-size: 1rem;
+                margin: 1rem 0;
+                font-weight: bold;
+            }
+
+            .url-repo {
+                font-size: 0.8rem;
+                overflow-wrap: break-word;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

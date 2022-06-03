@@ -7,24 +7,25 @@ import { useCountContext } from '../Context/UseContxt';
 const Category = (props) => {
     const { defaultdata, setData } = useCountContext()
 
-    const handleselected =(event)=>{
+    const handleselected = (event) => {
         console.log(event.target.value)
-        const selectedResult = props.data.filter((item)=>
-            item.category.toLowerCase().indexOf(event.target.value) !== -1 
+        const selectedResult = props.data.filter((item) =>
+            item.category.toLowerCase().indexOf(event.target.value) !== -1
         )
         console.log(selectedResult)
         return setData(selectedResult)
 
     }
     return (
-        <div>
-            <form onChange={handleselected}>
-                <select name="region" id="region">
-                    <option value="">Filter</option>
-                    <option value="portfolio">Portfolio</option>
-                    <option value="game">Game</option>
-                    <option value="tool">Tool</option>
-                    <option value="blog">Blog</option>
+        <div className='category'>
+            <form onChange={handleselected} className="form">
+                <select name="region" id="region" className="select-region" >
+                    <option hidden value="" >Filter</option>
+                    <option  value=""  className='option'>All</option>
+                    <option value="portfolio" className='option'>Portfolio</option>
+                    <option value="game" className='option'>Game</option>
+                    <option value="tool" className='option'>Tool</option>
+                    <option value="blog" className='option'>Blog</option>
                 </select>
             </form>
         </div>

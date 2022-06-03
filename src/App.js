@@ -14,32 +14,8 @@ export const UserCount = React.createContext()
 // const { defaultdata, setData } = useCountContext();
 
 function App() {
-  // const { defaultdata, setData } = useCountContext();
-  // const textRef = useRef(null)
-  // const [inputText, setSearch] = useState("");
-  // let inputHandler = (e) => {
-  //   //convert input text to lower case
-  //   let lowerCase = e.target.value.toLowerCase();
-  //   setSearch(lowerCase);
-  // };
-//   const search = (arg) => {
-//     console.log("working")
-//     console.log("arg is " + arg)
-//     // console.log("data length is " + data.length)
-//     const filtered = data.filter((item, index) => {
-//         let emptyArray = ""
-//         if (item.name.toLowerCase().indexOf(arg) !== -1) {
-//             return emptyArray += item
-//         }
-//         return emptyArray
-//     })
-//     console.log(filtered)
 
-//     // setData(filtered)
-//     return filtered
-// }
 
-  
   return (
     <div className="App">
       <CountProvider>

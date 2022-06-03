@@ -1,0 +1,19 @@
+@use './var.scss' as v;
+
+.category {
+    background-color: v.$bg-color;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid v.$bg-color;
+    .form {
+        .select-region {
+            display: block;
+            animation: fadeInUp 500ms;
+            font-size: 20px;
+        }
+        .option {
+            display: block;
+            animation: fadeInUp 500ms;
+        }
+    }
+}
