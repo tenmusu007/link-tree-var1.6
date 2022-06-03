@@ -8,23 +8,7 @@ export function useCountContext() {
 }
 
 export function CountProvider({ children }) {
-    // const [count, setCount] = useState(100);
-    // const [defaultdata, setData] = useState(data.map((item, index) =>{
-    //         return (
-    //             <div key={index} className='link-indiv'>
-    //                 <div className='url-box'>
-    //                     <p className='url-name'>{item.name}</p>
-    //                     <p className='url'><a href={item.url}>{item.url}</a></p>
-    //                     <p className='repo-name'>Repository</p>
-    //                     <p className='url-repo'><a href={item.urlrepo}>{item.urlrepo}</a></p>
-    //                 </div>
-    //             </div>);
-    // }))
     const [defaultdata, setData] = useState(data)
-    // const value = {
-    //     count,
-    //     setCount,
-    // };
     const value1 = {
         defaultdata,
         setData,

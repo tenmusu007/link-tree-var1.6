@@ -1,0 +1,79 @@
+@use './var.scss' as v;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.search-bar {
+    background-color: v.$bg-color;
+    text-align: center;
+    padding: 1rem 0;
+
+    .input-box {
+        width: 40%;
+        margin: 0 auto;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 10px;
+        height: 30px;
+
+        // vertical-align: middle;
+        &:focus {
+            // transform: scale(1.2);
+            // border: 1px solid $bg-color;
+            // outline: none;
+            // border-radius: 10px;
+            // width: 100px;
+            // z-index: 3;
+        }
+
+        .input {
+            // margin: 1rem 0 1rem 0 ;
+            // height: 2rem;
+            font-size: 15px;
+            // border: 1px solid $bg-color;
+            // border-radius: 10px;
+            // width: 30px;
+            border: none;
+            width: 50%;
+
+            &:focus {
+                // transform: scale(1.2);
+                border: 1px solid black;
+                border: 1px solid white;
+                outline: none;
+                // border-radius: 10px;
+                width: 100px;
+                z-index: 3;
+
+            }
+
+            &:before {
+                transform: rotate(52deg);
+                right: 22px;
+                top: 23px;
+                height: 40px;
+                z-index: 3;
+
+            }
+
+            &:after {
+                transform: rotate(-230deg);
+                right: 22px;
+                top: 13px;
+                height: 40px;
+                z-index: 3;
+
+            }
+        }
+
+        .icon-search {
+            z-index: 99;
+            // vertical-align: middle;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
