@@ -1,6 +1,7 @@
 @use './var.scss' as v;
 
 .category {
+    padding-right: 2%;
     background-color: v.$bg-color;
     display: flex;
     justify-content: flex-end;
