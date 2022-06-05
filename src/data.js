@@ -9,7 +9,7 @@ export const data =[
     },
     {
         name:"Travel-Journal",
-        url:"https://main.durpnwk9bv4uj.amplifyapp.com/",
+        url:"https://main.d5xfonxnacho3.amplifyapp.com/",
         category:"blog",
         urlrepo:"https://github.com/tenmusu007/travel-journal",
         reponame:"Repository"
