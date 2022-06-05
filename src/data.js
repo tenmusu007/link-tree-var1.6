@@ -25,9 +25,9 @@ export const data =[
     },
     {
         name:"Imperial Unit Conversion",
-        url:"https://tenmusu007.github.io/solo-project2-ver2.0/",
+        url:"https://tenmusu007.github.io/solo_project1/",
         category:"tool",
-        urlrepo:"https://github.com/tenmusu007/solo-project2-ver2.0",
+        urlrepo:"https://tenmusu007.github.io/solo_project1/",
         reponame:"Repository"
     },
 ]
