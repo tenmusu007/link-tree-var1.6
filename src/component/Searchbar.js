@@ -17,7 +17,7 @@ const SearchBar = (props) => {
 
     const handleSearch = () => {
         const fliteredRsult = props.data.filter((item) =>
-            item.name.toLowerCase().indexOf(textRef.current.value) !== -1
+            item.name.toLowerCase().indexOf(textRef.current.value.toLowerCase()) !== -1
         )
         console.log(fliteredRsult)
         return setData(fliteredRsult)
