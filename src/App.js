@@ -1,29 +1,25 @@
-import React,{useState,useRef} from 'react';
+import React,{useState,useRef, useEffect} from 'react';
 import './scss/App.scss';
 import { data } from './data';
-// import search from './component/Header'
-
-
 import Header from './component/Header';
 import SearchBar from './component/Searchbar';
 import Card from './component/Card';
 import Category from './component/Category';
-import { CountProvider } from './Context/UseContxt';
+import { DataProvider } from './Context/UseContxt';
+
 
 export const UserCount = React.createContext()
-// const { defaultdata, setData } = useCountContext();
 
 function App() {
 
-
   return (
     <div className="App">
-      <CountProvider>
+      <DataProvider>
             <Header />
             <SearchBar data = {data}/>
             <Category data = {data}/>
             <Card/>
-      </CountProvider>
+      </DataProvider>
     </div>
   );
 }
