@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDataContext } from "../Context/UseContxt";
 
-const Category = (props) => {
+const Category = () => {
   const { git, setGit } = useDataContext();
 	const handleselected = (event) => {
 		const selectedResult = git[0].original.filter((item) => {

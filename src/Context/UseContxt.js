@@ -14,6 +14,7 @@ export function DataProvider({ children }) {
 		repo: [],
 		category: []
 	}])
+	const [update, setUpdate]= useState(false)
 	useEffect(() => {
 		if (JSON.parse(localStorage.getItem("data"))) {
 			console.log("local working");
@@ -28,7 +29,7 @@ export function DataProvider({ children }) {
 		}, [])
 		// console.log("useContxt", git);
 	const filteredRepo = (git) => {
-		console.log(git);
+		// console.log(git);
 		const filltred = git.filter((data) => {
 			if (data.description !== null) {
 				return data;
@@ -47,10 +48,12 @@ export function DataProvider({ children }) {
 		);
 		setGit([{original :filltred, repo: filltred, category: topic }]);
 	};
-	console.log(git);
+	// console.log(git);
 	const value1 = {
 		git,
 		setGit,
+		update,
+		setUpdate,
 	};
 
 	return <DataContext.Provider value={value1}>{children}</DataContext.Provider>;

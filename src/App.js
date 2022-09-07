@@ -15,9 +15,9 @@ function App() {
   return (
     <div className="App">
       <DataProvider>
-            <Header />
-            <SearchBar data = {data}/>
-            <Category data = {data}/>
+        <Header />
+            <SearchBar />
+            <Category />
             <Card/>
       </DataProvider>
     </div>

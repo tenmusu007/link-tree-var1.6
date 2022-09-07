@@ -2,8 +2,8 @@
 import React,{useContext, useState} from 'react' 
 import { useDataContext } from '../Context/UseContxt';
 // import search from './component/Header'
-const Card = (props) => {
-    const { git, setGit } = useDataContext()
+const Card = () => {
+    const { git, setGit,update } = useDataContext()
 	const copy = git[0].repo.map((item, index) => {
 			// console.log(item);
         return (
@@ -22,7 +22,8 @@ const Card = (props) => {
 				);
     })
     return (
-        <div className='link-container'>
+			<div className='link-container'>
+			
             {copy}
         </div>
     )
